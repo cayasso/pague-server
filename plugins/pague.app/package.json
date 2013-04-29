@@ -1,0 +1,10 @@
+{
+  "name": "pague.app",
+  "description": "pague application module",
+  "version": "0.0.1",
+  "main": "index.js",
+  "plugin": {
+    "consumes": ["db", "express", "user", "alert"],
+    "provides": []
+  }
+}

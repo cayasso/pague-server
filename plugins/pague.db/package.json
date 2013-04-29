@@ -1,0 +1,9 @@
+{
+  "name": "pague.db",
+  "description": "pague database module",
+  "version": "0.0.1",
+  "main": "index.js",
+  "plugin": {
+    "provides": ["db"]
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "name": "pague.express",
+  "description": "pague express module",
+  "version": "0.0.1",
+  "main": "index.js",
+  "plugin": {
+    "consumes": ["db"],
+    "provides": ["express"]
+  }
+}
