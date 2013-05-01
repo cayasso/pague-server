@@ -25,6 +25,7 @@ function Alert (options, imports) {
   options = options || {};
   imports = imports || {};
   this.model = model;
+  this.mailer = imports.mailer;
   this.db = imports.db;
   this.express = express;
   this.app = express();
@@ -46,7 +47,14 @@ Alert.prototype.all = function (query, fn) {
 };
 
 Alert.prototype.create = function (data, fn) {
-  this.model.create(data, fn);
+  this.model.create(data, function (error, alert) {
+    if (error) {
+      if (fn) fn(error);
+      return;
+    }
+    this.model.schedule();
+    if (fn) fn(null, fn);
+  }.bind(this));
 };
 
 Alert.prototype.update = function (id, data, fn) {

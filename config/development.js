@@ -11,6 +11,13 @@ var config = [
       secret: "abcd-1234567890",
       key: 'connect.sid'
     }
+  },{
+    packagePath: './pague.mailer',
+    service: "Gmail",
+    auth: {
+      user: "gmail.user@gmail.com",
+      pass: "userpass"
+    }
   },
   './pague.user',
   './pague.alert',

@@ -2,7 +2,6 @@
   "name": "pague-server",
   "version": "0.0.1",
   "author": "Jonathan Brumley <cayasso@gmail.com>",
-  "private": true,
   "scripts": {
     "start": "index.js",
     "test": "make test"
@@ -19,7 +18,9 @@
     "architect": "0.1.8",
     "mongoose": ">= 3.5.4",
     "mongoose-createdmodified": ">= 0.0.2",
-    "lodash": ">= 1.2.0"
+    "lodash": ">= 1.2.0",
+    "cron": "1.0.x",
+    "nodemailer": "0.4.x"
   },
   "engines": {
     "node": ">= 0.8.x"

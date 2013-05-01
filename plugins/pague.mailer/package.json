@@ -1,0 +1,10 @@
+{
+  "name": "pague.mailer",
+  "description": "pague mailer module",
+  "version": "0.0.1",
+  "main": "index.js",
+  "plugin": {
+    "consumes": [],
+    "provides": ["mailer"]
+  }
+}
